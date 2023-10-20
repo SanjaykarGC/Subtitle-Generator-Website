@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./login.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container mt-3">
+    <div class="row justify-content-end">
+      <div class="d-flex justify-content-between">
+        <div>
+          <div class="company-logo d-flex justify-content-start">
+            <img src="./add-logo.png" class="img-fluid" alt="Logo">
+            <p class="fs-1 fw-bold" id="campany-name">DubArt</p>
+          </div>
+          <p id="join">JOIN THE</p><br><p id="language">Language Revolution</p>
+
+          <div class="d-flex justify-content-between" id="allcards">
+            <div class="card d-flex justify-content-between pt-lg-4">
+              <img src="./option-image/spe.svg" alt="Dubbing" height="100px">
+              <div id="cards">
+                <h3 id="card-title">AI Dubbing</h3>
+                <p class="text" id="card-text">Real-time Video Dubbing in 3+ languages</p>
+              </div>
+            </div>
+            <div class="card d-flex justify-content-between pt-lg-4">
+              <img src="./option-image/subtitles.svg" alt="Subtitles" height="100px">
+              <div id="cards">
+                <h3 id="card-title">Fast Subtitling</h3>
+                <p class="text" id="card-text">Generate, edit and export Subtitles in English</p>
+              </div>
+            </div>
+            <div class="card d-flex justify-content-between pt-lg-4">
+              <img src="./option-image/speech.svg" alt="Speect-to-text" height="100px">
+              <div id="cards">
+                <h3 id="card-title">Text to Speech</h3>
+                <p class="text" id="card-text">Studio quality human-like Voice Over from just Text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body mt-lg-4">
+              <h3 id="welcome">Welcome &#128171;</h3>
+              <form id="login-form" action="http://localhost:8000/log_in" method="POST">
+                <div class="mb-3">Email address
+                  <input class="line form-control" type="email" placeholder="Eg: youremail@gmail.com" name="email">
+                </div>
+                <div class="mb-3">Password
+                  <input class="line form-control" type="password" placeholder="Your secret words" name="password">
+                </div>
+                <button class="btn btn-primary" id="login-button">
+                  Login
+                </button><br><br>
+                <div class="create-acc">
+                  Don’t have an account?
+                  <a href="signup.html">create a new account here</a>
+                </div><br><br>
+                <center>
+                  <div class="terms">
+                    By Logging In you agree to our<br> 
+                    <a href="#" id="terms-condition">Terms and Conditions</a> and <a href="#" id="terms-condition">Privacy Policy.</a>
+                  </div>
+                </center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

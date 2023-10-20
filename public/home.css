@@ -1,0 +1,87 @@
+#img-logo{
+  border-radius: 10px;
+}
+#profile{
+  border-radius: 20px;
+}
+.card-img-start{
+  height:50px;
+  width: 50px;
+  padding-top: 10px !important;
+  padding-left: 20px !important;
+}
+.btn{
+  background-color: rgba(217, 215, 215, 0.453) !important;
+  color: black !important;
+  height: 35px;
+  width: 100%;
+  text-align: start !important;
+  font-size: 14px !important;
+}
+#next-btn{
+  background-color: rgba(217, 215, 215, 0.453) !important;
+  color: black !important;
+  height: 35px;
+  width: 55px !important;
+  font-size: 14px !important;
+}
+#dubart-body{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  margin-top: 2%;
+  margin-left: -5%;
+}
+/* Card style */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+
+
+/* Button style */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown button style */
+.dropdown-toggle {
+  background-color: #f8f9fa;
+  color: #000;
+  border: none;
+}
+
+.dropdown-toggle:hover {
+  background-color: #e9ecef;
+}
+
+/* Dropdown menu item style */
+.dropdown-item {
+  color: #000;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+#dubart-body{
+  margin-left: 9px;
+}
+#add-video:hover{
+  background-color: rgb(196, 192, 192) !important;
+}

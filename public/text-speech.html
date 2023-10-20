@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text To Speech</title>
+  <link rel="stylesheet" href="text-speech.css">
+</head>
+<body>
+  <div class="hero"> 
+    <h1>Text To speech <span>Converter</span></h1>
+    <textarea placeholder="write anything here...."></textarea>
+    <div class="row">
+      <select></select>
+      <button><img src="play.png">Listen</button>
+    </div>
+  </div>
+
+  <script>
+    let speech = new SpeechSynthesisUtterance();
+    let voices = [];
+    let voiceselect = document.querySelector("select");
+
+    window.speechSynthesis.onvoiceschanged = () => {
+        voices = window.speechSynthesis.getVoices();
+        speech.voice = voices[0]; // Use square brackets to access elements of an array
+
+        voices.forEach((voice, i) => {
+            voiceselect.options[i] = new Option(voice.name, i); // Capital "O" in Option
+        });
+    };
+
+    voiceselect.addEventListener("change" , () => {
+        speech.voice = voices[voiceselect.value];
+    });
+
+    document.querySelector("button").addEventListener("click", () => {
+        speech.text = document.querySelector("textarea").value;
+        window.speechSynthesis.speak(speech);
+    });
+  </script>
+</body>
+</html>
